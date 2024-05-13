@@ -62,7 +62,7 @@ app.get('/aircraft', async (req: Request, res: Response) => {
 
     if (
       !isAllString([type, airport, begin, end]) ||
-      !['arrivals', 'departures'].includes(airport as string) ||
+      !['arrival', 'departure'].includes(airport as string) ||
       !canParseToInt(begin as string) ||
       !canParseToInt(end as string)
     ) {
