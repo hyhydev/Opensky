@@ -7,8 +7,27 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Item {
-  id        Int      @id @default(autoincrement())
-  name      String
-  description String?
+model Request {
+  id        String     @id @default(cuid())
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  type      String
+  airport   String
+  begin     Int
+  end       Int
+  aircraft  Aircraft[]
+}
+
+model Aircraft {
+  id                  String   @id @default(cuid())
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  icao24              String
+  estDepartureAirport String?
+  estArrivalAirport   String?
+  callsign            String
+  firstSeen           Int
+  lastSeen            Int
+  Request             Request? @relation(fields: [requestId], references: [id])
+  requestId           String?
 }
