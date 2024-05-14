@@ -15,3 +15,5 @@ app.listen(PORT, () => {
 //   'http://localhost:3000/aircraft?type=arrival&airport=EDDF&begin=1517227200&end=1517230800',
 //   'http://localhost:3000/aircraft?type=departure&airport=EDDF&begin=1517227200&end=1517230800',
 // ]
+
+export default app

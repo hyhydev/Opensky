@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "target": "es2022",
-        "allowJs": true,
-        "strict": true,
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "noUncheckedIndexedAccess": true,
-        "noImplicitOverride": true,
-        "noEmit": true,
-        "lib": ["es2022", "dom", "dom.iterable"]
-    }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "lib": ["es2022", "dom", "dom.iterable"]
+  }
 }
