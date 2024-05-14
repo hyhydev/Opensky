@@ -10,7 +10,7 @@ type OpenSkyResponse = {
   firstSeen: number
   estDepartureAirport: string | null
   lastSeen: number
-  estArrivalAirport: string
+  estArrivalAirport: string | null
   callsign: string
   estDepartureAirportHorizDistance: number | null
   estDepartureAirportVertDistance: number | null
