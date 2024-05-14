@@ -103,7 +103,6 @@ const prisma = new PrismaClient()
  *         description: Server error
  */
 router.get('/', async (req: Request, res: Response) => {
-  console.log('hello')
   try {
     const { type, airport, begin, end } = req.query
 
