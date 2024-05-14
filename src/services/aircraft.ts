@@ -31,7 +31,6 @@ class AircraftService {
     begin: string,
     end: string
   ): Promise<{ success: boolean; data?: AircraftServiceResponse }> {
-    // try {
     const cachedRequest = await prisma.request.findFirst({
       where: {
         type,
@@ -79,9 +78,6 @@ class AircraftService {
     })
 
     return { success: true, data: aircraftPayloadNormalised }
-    // } catch (error) {
-    //   throw new Error('Processing failed')
-    // }
   }
 }
 
