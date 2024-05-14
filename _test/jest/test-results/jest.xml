@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="1.388">
-  <testsuite name="GET /aircraft" errors="0" failures="0" skipped="0" timestamp="2024-05-14T10:19:10" time="1.35" tests="1">
-    <testcase classname="GET /aircraft should return 200 for valid inputs" name="GET /aircraft should return 200 for valid inputs" time="0.033">
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="2.898">
+  <testsuite name="GET /aircraft" errors="0" failures="0" skipped="0" timestamp="2024-05-14T12:00:16" time="1.854" tests="1">
+    <testcase classname="GET /aircraft should return 200 for valid inputs" name="GET /aircraft should return 200 for valid inputs" time="0.04">
+    </testcase>
+  </testsuite>
+  <testsuite name="AircraftService" errors="0" failures="0" skipped="0" timestamp="2024-05-14T12:00:16" time="1.697" tests="5">
+    <testcase classname="AircraftService should successfully validate valid inputs" name="AircraftService should successfully validate valid inputs" time="0.003">
+    </testcase>
+    <testcase classname="AircraftService should invalidate inputs if the second parameter is not a string" name="AircraftService should invalidate inputs if the second parameter is not a string" time="0">
+    </testcase>
+    <testcase classname="AircraftService should invalidate inputs if the third parameter is not a string" name="AircraftService should invalidate inputs if the third parameter is not a string" time="0">
+    </testcase>
+    <testcase classname="AircraftService should invalidate inputs if the fourth parameter is not a string" name="AircraftService should invalidate inputs if the fourth parameter is not a string" time="0.001">
+    </testcase>
+    <testcase classname="AircraftService should invalidate inputs if the first parameter is not a string" name="AircraftService should invalidate inputs if the first parameter is not a string" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="AircraftController" errors="0" failures="0" skipped="0" timestamp="2024-05-14T12:00:16" time="2.386" tests="3">
+    <testcase classname="AircraftController should return 400 if inputs are invalid" name="AircraftController should return 400 if inputs are invalid" time="0.005">
+    </testcase>
+    <testcase classname="AircraftController should return 200 and process data if inputs are valid" name="AircraftController should return 200 and process data if inputs are valid" time="0.001">
+    </testcase>
+    <testcase classname="AircraftController should return 500 if processing fails" name="AircraftController should return 500 if processing fails" time="0">
     </testcase>
   </testsuite>
 </testsuites>
